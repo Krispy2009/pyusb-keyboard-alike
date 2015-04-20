@@ -10,7 +10,7 @@ class BarCodeReader(reader.Reader):
 
 
 if __name__ == "__main__":
-    reader = BarCodeReader(0x03eb, 0x6201, 84, 6, should_reset=True)
+    reader = BarCodeReader(0x1eab, 0x0003, 84, 6, should_reset=True)
     reader.initialize()
     print(reader.read().strip())
     reader.disconnect()
